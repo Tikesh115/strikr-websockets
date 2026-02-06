@@ -2,6 +2,11 @@ import { eq } from 'drizzle-orm';
 import { db, pool } from './db/db.js';
 import { demoUsers } from './db/schema.js';
 
+/**
+ * Execute a demo sequence of CRUD operations against the configured database and close the pool when finished.
+ *
+ * Performs create, read, update, and delete operations for a sample user. On error the function logs the error and exits the process with code 1; it always closes the database connection pool before completing.
+ */
 async function main() {
   try {
     console.log('Performing CRUD operations...');
