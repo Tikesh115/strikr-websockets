@@ -37,7 +37,6 @@ export function attachWebSocketServer(server) {
                 return;
             }
         }
-
         socket.isAlive = true;
         socket.on('pong', () => { socket.isAlive = true; });
 
