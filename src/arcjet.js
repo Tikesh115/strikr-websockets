@@ -14,7 +14,7 @@ export const httpArcjet = arcjetKey ? arcjet({
     ]
 }) : null;
 
-export const wsArcjet = arcjet ? arcjet({
+export const wsArcjet = arcjetKey ? arcjet({
     key: arcjetKey,
     rules: [
         shield({ mode: arcjetMode }),
