@@ -25,6 +25,9 @@ export const wsArcjet = arcjetKey ? arcjet({
 
 export function securityMiddleware() {
     return async (req, res, next) => {
+        const isDev = process.env.NODE_ENV !== 'production';
+        const isLocalhost = ['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(req.ip);
+        if (isDev && isLocalhost) return next();
         if(!httpArcjet) return next();
 
         try {
