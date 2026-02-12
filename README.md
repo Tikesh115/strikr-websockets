@@ -134,12 +134,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the ISC License.
 
-## 👤 Author
-
-**Tikesh115**
-
-- GitHub: [@Tikesh115](https://github.com/Tikesh115)
-
 ## 🙏 Acknowledgments
 
 - Built with Express.js and WebSocket technology
